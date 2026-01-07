@@ -1,10 +1,9 @@
 #include <iostream>
 
 int main(){    
-    int numUser = 0;
+    float numUser = 0;
     int counter = 0;
-    int numsOfUser[100];
-    int index = 0;
+    float sumaDeNotas = 0;
     do {
 	std::cout << "Digite una nota (0-100):\n";
 	std::cin >> numUser;
@@ -17,24 +16,15 @@ int main(){
 			 "Por favor vuelva a ingresar una nueva nota.\n";
 	    continue;
 	}
-	numsOfUser[index] = numUser;
-	index++;
-	counter = index;
+	sumaDeNotas += numUser;
+	counter++;
     } while (numUser >= 0);
-    
-    std::cout << "Numeros ingresados:\n";
-    for (int i = 0; i < counter; i++){
-	std::cout << numsOfUser[i] << "\n";
+    if (counter == 0) {
+	std::cout << "No hay datos. Es posible que halla ingresado notas no validas.\n";
+    } else {
+	std::cout << "cantidad de notas ingresados: " << counter << "\n";
+	float average = sumaDeNotas/(float)counter;
+	std::cout << "Promedio de notas: " << average << "\n";
     }
-    std::cout << "cantidad de notas ingresados: " << counter << "\n";
-    
-    float average = 0;
-    for (int i = 0; i < counter; i++){
-	average += numsOfUser[i];
-    }
-    average /= counter;
-    std::cout << "Promedio: " << average << "\n";
-
-
     return 0;
 }
