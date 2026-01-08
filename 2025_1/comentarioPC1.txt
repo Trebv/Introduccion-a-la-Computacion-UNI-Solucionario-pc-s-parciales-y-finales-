@@ -1,0 +1,4 @@
+Note que los problemas de la PC1 piden desarrollar un pseudocodigo para cada problema propuesto.
+Coma sabran un pseudocodigo NO es un lenguaje de programacion, adema's, que difiere segun quien realize el pseudocodigo, por eso es que existen perfiles en PSEINT.
+Por ejemplo para un perfil en particular el algoritmo inicia con la palabra clave "Inicio" y termina con "Fin". En otros es con "Algoritmo" y "FinAlgoritmo", esto
+pasa tambien con los bucles, condicionales y demas palabras claves. Con esa consideracion aun no estoy seguro si hacer las soluciones porque no se que palabras clave usa la UNI.
