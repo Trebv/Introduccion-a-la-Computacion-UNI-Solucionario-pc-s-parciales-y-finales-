@@ -1,6 +1,6 @@
 start:
-    output "Ingrese un numero real"
-    input number
+    output "Ingrese un numero real"			// Imprimimos un mensaje a pantalla
+    input number							// Pedimos una entrada y lo almacenamos en number dicho dato
     
     // Primera parte
     if number > 0 :
