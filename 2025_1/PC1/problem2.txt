@@ -1,8 +1,8 @@
 start:
     output "Digite la cantidad de energia (en joules): "
-    input energiaJoules
+    input energiaJoules					// Almacenamos el dato en la variable energiaJoules
 
-    energiaCalorias = energiaJoules / 4.184
+    energiaCalorias = energiaJoules / 4.184		// Por dato 1 cal = 4.184 j.
 
     if energiaCalorias > 500 :
 	output "La cantidad de energia supera las 500 cal"
