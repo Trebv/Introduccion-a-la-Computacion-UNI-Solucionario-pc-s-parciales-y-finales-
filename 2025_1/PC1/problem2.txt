@@ -5,5 +5,5 @@ start:
     energiaCalorias = energiaJoules / 4.184		// Por dato 1 cal = 4.184 j.
 
     if energiaCalorias > 500 :
-	output "La cantidad de energia supera las 500 cal"
+		output "La cantidad de energia supera las 500 cal"
 end
