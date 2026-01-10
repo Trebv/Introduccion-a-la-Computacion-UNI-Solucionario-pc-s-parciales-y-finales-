@@ -4,17 +4,17 @@ start:
     
     // Primera parte
     if number > 0 :
-	output "El numero es positivo"
+		output "El numero es positivo"
     else if number < 0 :
-	output "El numero es negativo"
+		output "El numero es negativo"
     else :
-	output "El numero es cero"
+		output "El numero es cero"
 
     // Segunda parte
     if number % 1 == 0 :
-	output "Es un numero entero"
+		output "Es un numero entero"
     else :
-	output "Es un numero decimal"
+		output "Es un numero decimal"
 
     // Nota:
     // Para la segunda parte calculamos el resto (% operador de resto) de dividir number entre 1. For example: 12.2 entre 1 deja cociente 12 y resto 0.1
@@ -24,4 +24,13 @@ start:
     // Si lo hubiera entonces tendriamos otra manera de hacerlo. Digamos que la funcion que realiza esta accion es parteEntera() o truncar(), esta vez la llamare
     // parteEntera(), usando esta funcion la segunda parte se veria como:
 
-    number = number - parteEntera(number) 
+    number = number - parteEntera(number)
+	if number == 0:
+		output "Es un numero entero"
+	else :
+		output "Es un numero decimal"
+	// Que significa esto?. Supongamos que number = 3.2, su parte entera es 3. Ahora si yo resto a number menos su parte entera solo tendremos dos posibilidades:
+	// - La resta es 0 si y solo si number es un entero
+	// - La resta es diferente de 0 si y solo si number es un numero decimal
+
+end
