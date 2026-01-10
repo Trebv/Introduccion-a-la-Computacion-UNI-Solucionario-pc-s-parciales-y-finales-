@@ -5,5 +5,7 @@ start:
     valorIdeal = 100
 
     if abs(x - valorIdeal) <= 5:
-	output "La medida se encuentra dentro de la tolerancia esperada: [95 - 105]"
+		output "La medida se encuentra dentro de la tolerancia esperada: [95 - 105]"
+	else :
+		output "La medida no se encuentra dentro de la tolerancia esperada"
 end
