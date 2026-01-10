@@ -1,0 +1,15 @@
+start:
+    output "Ingrese su edad (entero): "
+    input age
+
+    if age > 0 and age < 4:
+	output "El precio de la entrada es: Gratis."
+    else if age <= 12:
+	output "El precio de la entrada es: $5."
+    else if age <= 64:
+	output "El precio de la entrada es: $15."
+    else if age <= 100:
+	output "El precio de la entrada es: $8."
+    else:
+	output "Edad no valida. La edad debe estar entre 0 - 100"
+end
