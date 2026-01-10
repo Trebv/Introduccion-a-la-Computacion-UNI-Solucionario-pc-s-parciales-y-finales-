@@ -1,0 +1,27 @@
+start:
+    output "Ingrese un numero real"
+    input number
+    
+    // Primera parte
+    if number > 0 :
+	output "El numero es positivo"
+    else if number < 0 :
+	output "El numero es negativo"
+    else :
+	output "El numero es cero"
+
+    // Segunda parte
+    if number % 1 == 0 :
+	output "Es un numero entero"
+    else :
+	output "Es un numero decimal"
+
+    // Nota:
+    // Para la segunda parte calculamos el resto (% operador de resto) de dividir number entre 1. For example: 12.2 entre 1 deja cociente 12 y resto 0.1
+    // luego ese resto se compara con 0 si es igual o no.
+
+    // No estoy seguro si hay una funcion para obtener solo la parte entera del numero.
+    // Si lo hubiera entonces tendriamos otra manera de hacerlo. Digamos que la funcion que realiza esta accion es parteEntera() o truncar(), esta vez la llamare
+    // parteEntera(), usando esta funcion la segunda parte se veria como:
+
+    number = number - parteEntera(number) 
