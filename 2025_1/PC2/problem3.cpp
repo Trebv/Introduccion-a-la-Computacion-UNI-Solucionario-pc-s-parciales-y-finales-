@@ -7,24 +7,23 @@ int main(){
     int num = 0;
 
     while (true) {
-	std::cout << "Enter a number: ";
-	std::cin >> num;
-	numOfTries++;
-	if (num == 0 || numOfTries > TRIES ) { break; }
-	
+		std::cout << "Enter a number: ";
+		std::cin >> num;
+		numOfTries++;
+		if (num == 0 || numOfTries > TRIES ) { 
+			break; 
+		}
 	/*
 	Consideraremos "Demasiado alto" si la diferencia entre GUESS_NUM y NUM 
 	es mayor que 10, en caso contrario se considera "Demasiado bajo"
 	*/
-	
-	if (num - GUESS_NUM > 10) { std::cout << "Demasiado alto\n";}
-	if (GUESS_NUM - num > 10) { std::cout << "Demasiado bajo\n";}
-	if (GUESS_NUM == num) { 
-	    std::cout << "Numero encontrado:)\n";
-	    break;
-	}
+		if (num - GUESS_NUM > 10) { std::cout << "Demasiado alto\n";}
+		if (GUESS_NUM - num > 10) { std::cout << "Demasiado bajo\n";}
+		if (GUESS_NUM == num) { 
+	    	std::cout << "Numero encontrado:)\n";
+	    	break;
+		}
     }
-
     return 0;
 }
 
